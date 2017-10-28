@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bun Bun Bake Shop</title>
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main2.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- Top Bar -->
+  <header>
+    <div id="top-bar" class="flex-container">
+      <div id="logo" class="flex-item"><a href="index.html"><img src="resources/bunbun_logo2.svg" alt="Bun Bun Logo"></a></div>
+      <div class="flex-item">
+        <p id="sign-in">SIGN IN</p>
+        <a href="shopping_cart.html"><i id="shopping-bag" class="fa fa-shopping-bag"></i></a>
+        <p id="cart-icon-num"></p>
+      </div>
+    </div>
+  </header>
+
+<!-- Breadcrumbs -->
+  <div id="breadcrumbs-checkout" class="breadcrumbs">
+    <p class="active">Review</p>
+    <i class="fa fa-chevron-right"></i>
+    <p>Payment</p>
+    <i class="fa fa-chevron-right"></i>
+    <p >Checkout</p>
+  </div>
+
+<!-- Page Content -->
+  <div>
+    <p id="cart-title">Your Shopping Bag</p>
+  </div>
+  <div id="checkout-button" class="checkout">
+    <button class="checkout-button">Proceed to Checkout</button>
+  </div>
+  <div>
+    <p id="empty-cart-message">Your Shopping Bag is empty right now :(</p>
+  </div>
+
+  <table id="shopping-cart-content">
+    <tr>
+      <th id="image-small">Items</th>
+      <th id="items-cell"></th>
+      <th id="details-cell">Details</th>
+      <th id="quantity-cell">Quantity</th>
+      <th id="price-cell">Price (USD)</th>
+      <th id="remove-cell"></th>
+    </tr>
+  </table>
+
+    <div id="checkout-button2" class="checkout">
+    <button class="checkout-button">Proceed to Checkout</button>
+  </div>
+
+<!-- Footer -->
+<footer>
+    <p>Copyrighted by Bun Bun Bake Shop</p>
+</footer>
+
+</body>
+</html>

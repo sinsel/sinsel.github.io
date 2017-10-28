@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bun Bun Bake Shop</title>
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header>
+    <div id="top-bar" class="flex-container">
+      <div id="logo" class="flex-item"><a href="index.html"><img src="resources/bunbun_logo2.svg" alt="Bun Bun Logo"></a></div>
+      <div class="flex-item">
+        <p id="sign-in">SIGN IN</p>
+        <a href="shopping_cart.html"><i id="shopping-bag" class="fa fa-shopping-bag"></i></a>
+        <p id="cart-icon-num"></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+<div id="navbar">
+   <ul>
+      <li><a href="index.html"><span>Home</span></a></li>
+      <li><a href="#"><span>About Us</span></a></li>
+      <li><a href="cinnabuns.html"><span>Our Cinnamon Buns</span></a></li>
+      <li><a href="#"><span>Our Cafe</span></a></li>
+      <li><a href="#"><span>Order Online</span></a></li>
+   </ul>
+</div>
+
+  <!-- Breadcrumbs -->
+<div class="breadcrumbs">
+  <a href="cinnabuns.html"><p>Our Cinnamon Buns</p></a>
+  <i class="fa fa-chevron-right"></i>
+  <a href="cinnabuns.html"><p>All Buns</p></a>
+  <i class="fa fa-chevron-right"></i>
+  <p class="active">Original (Vegan)</p>
+</div>
+
+  <!-- Page Content -->
+<div class="product-container">
+  <div id="left-box">
+    <img id="product-img" src="resources/original.jpg" alt="original_bun">
+    <p id="product-text">Vegan version of our customer favorite original cinnamon bun!<br><br>Enjoy it warm or cold. Best enjoyed with company.</p>
+  </div>
+  <div id="right-box">
+    <p id="product-name">Our Original (Vegan) Bun</p>
+      <p id="price-tag">Price: $</p>
+      <div id="price-of-item">3</div>
+    <div id="color-box">
+      <div id ="box-type-buttons">
+        <input id="1-pack" type="radio" class="box-type" name="box-type" value="1-Pack"></input>
+        <label class="pack-label" for="1-pack">1-Pack</label>
+        <input id="6-pack" type="radio" class="box-type" name="box-type" value="6-Pack"></input>
+        <label class="pack-label" for="6-pack">6-Pack</label>
+        <input id="12-pack" type="radio" class="box-type" name="box-type" value="12-Pack"></input>
+        <label class="pack-label" for="12-pack">12-Pack</label>
+      </div>
+
+      <div id="flavorSelection">
+        <div>
+          <label for="flavor1">Extra Flavor:</label>
+          <select id="flavorSelector1" name="flavor1">
+          <option value="3" disabled selected>Please select flavor</option>
+          <option value="3" name="original">Original</option>
+          <option value="3" name="originalGF">Original (Gluten-free)</option>
+          <option value="3" name="originalV">Original (Vegan)</option>
+          <option value="4" name="mapleApple">Maple Apple Pecan</option>
+          <option value="4" name="bacon">Bacon</option>
+          <option value="4" name="walnut">Walnut</option>
+          <option value="4" name="pumpkin">Pumpkin Spice</option>
+          <option value="4" name="caramel">Caramel Pecan</option>
+          <option value="4" name="carrot">Carrot Cake</option>
+          <option value="4" name="oldFashioned">Old Fashioned Buttermilk</option>
+          <option value="4" name="strawberry">Strawberry Rhubarb</option>
+          <option value="4" name="birthday">Birthday Cake</option>
+          <option value="4" name="lemonLavender">Lemon Lavender</option>
+          <option value="4" name="cranberry">Cranberry</option>
+          <option value="4" name="blackberry">Blackberry</option>
+        </select>
+        </div>
+        <div>
+          <label for="flavor2">Extra Flavor:</label>
+          <select id="flavorSelector2" name="flavor2">
+            <option value="3" disabled selected>Please select flavor</option>
+          <option value="3" name="original">Original</option>
+          <option value="3" name="originalGF">Original (Gluten-free)</option>
+          <option value="3" name="originalV">Original (Vegan)</option>
+          <option value="4" name="mapleApple">Maple Apple Pecan</option>
+          <option value="4" name="bacon">Bacon</option>
+          <option value="4" name="walnut">Walnut</option>
+          <option value="4" name="pumpkin">Pumpkin Spice</option>
+          <option value="4" name="caramel">Caramel Pecan</option>
+          <option value="4" name="carrot">Carrot Cake</option>
+          <option value="4" name="oldFashioned">Old Fashioned Buttermilk</option>
+          <option value="4" name="strawberry">Strawberry Rhubarb</option>
+          <option value="4" name="birthday">Birthday Cake</option>
+          <option value="4" name="lemonLavender">Lemon Lavender</option>
+          <option value="4" name="cranberry">Cranberry</option>
+          <option value="4" name="blackberry">Blackberry</option>
+          </select>
+        </div>
+      </div>
+      <label id="quantityLabel" class="quantity">Quantity:</label>
+      <input id="quantityInput" class="quantity" type="number" min="1" max="20" step="1" value="1" ></input>
+      <p id="total-price"></p>
+    </div>
+    <div id="customize">Want to customize your order? <br>Leave us a note!</divs>
+    <input id="customizeInput" placeholder="e.g. Surprise delivery"></input>
+    <button id="add-to-bag">Add to Shopping Bag</button>
+  </div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>Copyrighted by Bun Bun Bake Shop</p>
+</footer>
+
+</body>
+</html>
